@@ -1,0 +1,16 @@
+<div id="d1"></div>
+<script>
+    var s = '<student><id>st01</id><name>Name 1</name></student>';
+    var dom = new DOMParser();
+    var doc = dom.parseFromString(s, 'text/xml');
+    document.getElementById('d1').innerHTML = doc.documentElement.nodeName;
+    var childs = doc.documentElement.childElementCount;
+    
+    document.getElementById('d1').innerHTML += '<br>childs: ' + childs;
+    var student = doc.documentElement;
+    var id = student.childNodes[0].firstChild.textContent;
+    document.getElementById('d1').innerHTML += '<br>id: ' + id;
+    var name = student.childNodes[1].firstChild.textContent;
+    document.getElementById('d1').innerHTML += '<br>name: ' + name;
+</script>
+

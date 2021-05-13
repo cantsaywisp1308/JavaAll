@@ -1,0 +1,102 @@
+package Windows;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.BoxLayout;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.Color;
+import javax.swing.JPasswordField;
+
+public class SignUp extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField jtextFieldUsername;
+	private JPasswordField jpasswordFieldPassword;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					SignUp frame = new SignUp();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public SignUp() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(35,255,110)); 
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.X_AXIS));
+		
+		JPanel panel = new JPanel();
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Sign Up Session");
+		lblNewLabel.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/Modify.png"));
+		lblNewLabel.setFont(new Font("Lucida Grande", Font.BOLD, 16));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(86, 6, 251, 26);
+		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Username");
+		lblNewLabel_1.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/id-card.png"));
+		lblNewLabel_1.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		lblNewLabel_1.setBounds(6, 49, 109, 16);
+		panel.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("(Employee Number)");
+		lblNewLabel_2.setBounds(6, 70, 122, 16);
+		panel.add(lblNewLabel_2);
+		
+		jtextFieldUsername = new JTextField();
+		jtextFieldUsername.setBounds(127, 45, 251, 26);
+		panel.add(jtextFieldUsername);
+		jtextFieldUsername.setColumns(10);
+		
+		JLabel lblNewLabel_3 = new JLabel("Password");
+		lblNewLabel_3.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/secure.png"));
+		lblNewLabel_3.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		lblNewLabel_3.setBounds(6, 123, 109, 22);
+		panel.add(lblNewLabel_3);
+		
+		JButton btnNewButton = new JButton("Sign Up");
+		btnNewButton.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/Modify.png"));
+		btnNewButton.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		btnNewButton.setBounds(25, 199, 117, 36);
+		panel.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Cancel");
+		btnNewButton_1.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/cancel.png"));
+		btnNewButton_1.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		btnNewButton_1.setBounds(261, 199, 117, 36);
+		panel.add(btnNewButton_1);
+		
+		jpasswordFieldPassword = new JPasswordField();
+		jpasswordFieldPassword.setBounds(127, 122, 251, 26);
+		panel.add(jpasswordFieldPassword);
+	}
+
+}

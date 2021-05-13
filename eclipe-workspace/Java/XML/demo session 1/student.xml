@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<student>
+    <id>st01</id>
+    <name>Name1</name>
+        <adress>
+            <street>Street1</street>
+            <ward>Ward1</ward>
+            <district>District1</district>
+        </adress>
+        <email>e1@gmail.com</email>
+        <email>e1@hotmail.com</email>
+        <dob pattern = "yyyy-mm-dd" place ="Place 1">2020-01-14</dob>
+</student>

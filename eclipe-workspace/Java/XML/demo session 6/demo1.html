@@ -1,0 +1,15 @@
+<div id="d1"></div>
+<script>
+    var s='<student><id>st01</id><name>Name 1</name></student>';
+    var dom = new DOMParser();
+    var doc = dom.parseFromString(s,'text/xml');
+
+   doc.getElementsByTagName('name')[0].childNodes[0].nodeValue='abc';
+    var student = doc.documentElement;
+    var s = '';
+    for (var i =0; i < student.childNodes.length; i++) {
+        s+= student.childNodes[i].nodeName +  ':' + student.childNodes[i].textContent + '<br>';
+    }
+    document.querySelector('#d1').innerHTML = s;
+
+</script>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="products.xsl" type="text/xsl"?>
+<products>
+    <product>
+        <id>id01</id>
+        <name>Name01</name>
+        <photo>thumb1.jpg</photo>
+        <price currency="usd">5.6</price>
+    </product>
+
+    <product>
+        <id>id02</id>
+        <name>Name02</name>
+        <photo>thumb2.jpg</photo>
+        <price currency="aud">10</price>
+    </product>
+
+    <product>
+        <id>id03</id>
+        <name>Name03</name>
+        <photo>thumb3.jpg</photo>
+        <price currency="jpy">540</price>
+    </product>
+
+    <product>
+        <id>id04</id>
+        <name>Name04</name>
+        <photo>thumb4.jpg</photo>
+        <price currency="vnd">5600</price>
+    </product>
+</products>

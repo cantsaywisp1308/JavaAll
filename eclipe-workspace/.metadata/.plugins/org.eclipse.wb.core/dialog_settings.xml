@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wb.internal.core.editor.actions.assistant.LayoutAssistantWindow">
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.property.editor.string.StringPropertyDialog">
+		<item key="x" value="436"/>
+		<item key="y" value="280"/>
+		<item key="width" value="567"/>
+		<item key="height" value="310"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.nls.ui.NlsDialog">
+		<item key="x" value="360"/>
+		<item key="y" value="229"/>
+		<item key="width" value="720"/>
+		<item key="height" value="413"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.CategoryAddDialog">
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.ImportArchiveDialog">
+		<item key="x" value="423"/>
+		<item key="y" value="227"/>
+		<item key="width" value="593"/>
+		<item key="height" value="417"/>
+		<list key="HISTORY_JAR_LIST">
+			<item value="/Users/macbookair/eclipse-workspace/jcalendar-1/lib/jcalendar-1.4.jar"/>
+		</list>
+	</section>
+</section>

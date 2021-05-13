@@ -1,0 +1,66 @@
+<div id="d1"></div>
+<script>
+    var s = `<rss>
+        <item>
+            <title>
+<![CDATA[ Tuổi Trẻ Online - Nhịp sống số - RSS Feed ]]>
+</title>
+<link>
+<![CDATA[ https://tuoitre.vn/cong-nghe/nhip-song-so.htm ]]>
+</link>
+<ttl>60</ttl>
+<copyright>Tuổi Trẻ Online</copyright>
+<pubDate>Thu, 19 Nov 2020 20:13:25 GMT+7</pubDate>
+<generator>Tuổi Trẻ Online</generator>
+<docs>https://tuoitre.vn</docs>
+<item>
+<title>
+<![CDATA[ Viettel vào top 10 thương hiệu có trải nghiệm khách hàng tốt nhất ]]>
+</title>
+<link>
+<![CDATA[ https://tuoitre.vn/viettel-vao-top-10-thuong-hieu-co-trai-nghiem-khach-hang-tot-nhat-20201118091533417.htm ]]>
+</link>
+<guid isPermaLink="false">
+<![CDATA[ 9b7e868b-8953-42a2-8a08-4192718cb703 ]]>
+</guid>
+<description>
+<![CDATA[ <a href="https://tuoitre.vn/viettel-vao-top-10-thuong-hieu-co-trai-nghiem-khach-hang-tot-nhat-20201118091533417.htm"><img src="https://cdn1.tuoitre.vn/zoom/80_50/2020/11/18/top-10-cua-kpmg-16056650121461098628052-crop-16056654058602062880222.jpg" /></a>Theo báo cáo của KPMG - một trong bốn công ty kiểm toán lớn nhất thế giới, Viettel là doanh nghiệp viễn thông duy nhất nằm trong 10 thương hiệu có trải nghiệm khách hàng tốt nhất. ]]>
+</description>
+<pubDate>
+<![CDATA[ Wed, 18 Nov 2020 14:00:00 GMT+7 ]]>
+</pubDate>
+</item>
+<item>
+<title>
+<![CDATA[ Việt Nam cần xây dựng xa lộ cáp quang biển lớn hướng đến mục tiêu kiến tạo xã hội số ]]>
+</title>
+<link>
+<![CDATA[ https://tuoitre.vn/viet-nam-can-xay-dung-xa-lo-cap-quang-bien-lon-huong-den-muc-tieu-kien-tao-xa-hoi-so-20201112085241756.htm ]]>
+</link>
+<guid isPermaLink="false">
+<![CDATA[ 0cfde4fa-b358-4882-87f7-c6e76c6cfd50 ]]>
+</guid>
+<description>
+<![CDATA[ <a href="https://tuoitre.vn/viet-nam-can-xay-dung-xa-lo-cap-quang-bien-lon-huong-den-muc-tieu-kien-tao-xa-hoi-so-20201112085241756.htm"><img src="https://cdn1.tuoitre.vn/zoom/80_50/2020/11/12/apg-fiber-optic-cable-has-been-repaired-internet-capacity-goes-to-international-recovery-100-picture-1-3ral8cy5a-1605145478631739243245-crop-160514575636598638611.jpg" /></a>Ông Vũ Thế Bình, tổng thư ký Hiệp hội Internet, cho rằng hiện nay các nhà mạng lớn sẽ phải có nhiều tuyến cáp quang biển dung lượng đủ lớn để có thể phân tải khi gặp sự cố và đáp ứng nhu cầu dịch vụ của khách hàng. ]]>
+</description>
+<pubDate>
+<![CDATA[ Thu, 12 Nov 2020 10:38:12 GMT+7 ]]>
+</pubDate>
+</item>
+
+</rss>`
+
+var dom = new DOMParser();
+var doc = dom.parseFromString(s, 'text/xml');
+var items = doc.getElementsByTagName('item');
+document.getElementById('d1').innerHTML = 'items: ' + items.length + '<br>';
+var result = '';
+for(var i = 0; i < items.length; i++) {
+result += items[i].getElementsByTagName('title')[0].textContent + '<br>';
+result += items[i].getElementsByTagName('description')[0].textContent + '<br>';
+result += items[i].getElementsByTagName('pubDate')[0].textContent + '<br>';
+result += '<a href="' + items[i].getElementsByTagName('link')[0].textContent + '" target="_blank">Details</a><br>';
+result += '-------------------------<br>';
+}
+document.getElementById('d1').innerHTML += result;
+</script>

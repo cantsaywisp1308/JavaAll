@@ -1,0 +1,34 @@
+<div id="d1"></div>
+<script>
+    var s = '<student><id>st01</id><name>Name 1</name></student>';
+    var dom = new DOMParser();
+    var doc = dom.parseFromString(s, 'text/xml');
+    
+    // Tao the email
+    var email = doc.createElement('email');
+    var contentEmailTag = doc.createTextNode('a@gmail.com');
+    email.appendChild(contentEmailTag);
+    doc.documentElement.appendChild(email);
+    
+    // Tao the address
+    var address = doc.createElement('address');
+    // Tao the street 
+    var street = doc.createElement('street');
+    street.appendChild(doc.createTextNode('street 1'));
+    address.appendChild(street);
+    // Tao the ward
+
+    // Tao the district
+
+    // Tao the dob
+    var dob = doc.createElement('dob');
+    dob.appendChild(doc.createTextNode('2020-10-20'));
+    dob.setAttribute('place', 'Place 1');
+    dob.setAttribute('format', 'yyyy-MM-dd');
+    doc.documentElement.appendChild(dob);
+
+    var student = doc.documentElement;
+    document.querySelector('#d1').innerHTML = student.childElementCount;
+
+</script>
+

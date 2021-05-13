@@ -1,0 +1,136 @@
+package Windows;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import Entities.Students;
+import Model.AccountModel;
+
+import javax.swing.JLabel;
+import java.awt.Color;
+import javax.swing.SwingConstants;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+
+public class Login extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField jtextFieldUsername;
+	private JPasswordField jpasswordFieldPassword;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Login frame = new Login();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Login() {
+		setTitle("Aptech Student Login");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Welcome to Aptech");
+		lblNewLabel.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/DemoSession8_JavaSwing/src/ICON for Software/PNG-24/confetti.png"));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setForeground(new Color(0, 0, 0));
+		lblNewLabel.setBounds(134, 6, 164, 36);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Login Section");
+		lblNewLabel_1.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/DemoSession8_JavaSwing/src/ICON for Software/PNG-24/log-in.png"));
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setBounds(146, 54, 142, 23);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Username");
+		lblNewLabel_2.setBounds(29, 91, 73, 23);
+		contentPane.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_2_1 = new JLabel("Password");
+		lblNewLabel_2_1.setBounds(29, 137, 73, 23);
+		contentPane.add(lblNewLabel_2_1);
+		
+		jtextFieldUsername = new JTextField();
+		jtextFieldUsername.setBounds(105, 89, 214, 26);
+		contentPane.add(jtextFieldUsername);
+		jtextFieldUsername.setColumns(10);
+		
+		jpasswordFieldPassword = new JPasswordField();
+		jpasswordFieldPassword.setBounds(105, 135, 214, 26);
+		contentPane.add(jpasswordFieldPassword);
+		
+		JButton jbuttonLgoin = new JButton("Login");
+		jbuttonLgoin.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/DemoSession8_JavaSwing/src/ICON for Software/PNG-24/log-in.png"));
+		jbuttonLgoin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jbuttonLogin_actionPerformed(e);
+			}
+		});
+		jbuttonLgoin.setBounds(6, 199, 135, 38);
+		contentPane.add(jbuttonLgoin);
+		
+		JButton jbuttonCancel = new JButton("Cancel");
+		jbuttonCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jbuttonCancel_actionPerformed(e);
+			}
+		});
+		jbuttonCancel.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/DemoSession8_JavaSwing/src/ICON for Software/PNG-24/prohibition.png"));
+		jbuttonCancel.setBounds(309, 199, 135, 38);
+		contentPane.add(jbuttonCancel);
+		
+		JButton jbtnForgetPassword = new JButton("Forget Password");
+		jbtnForgetPassword.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/DemoSession8_JavaSwing/src/ICON for Software/PNG-24/question.png"));
+		jbtnForgetPassword.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jbtnForgetPassword_actionPerformed(e);
+			}
+		});
+		jbtnForgetPassword.setBounds(156, 199, 142, 38);
+		contentPane.add(jbtnForgetPassword);
+	}
+	private void jbuttonLogin_actionPerformed(ActionEvent e) {
+		AccountModel accountModel = new AccountModel(); 
+		String username = jtextFieldUsername.getText().trim();
+		String password = new String(jpasswordFieldPassword.getPassword());
+		
+	}
+	
+	private void jbtnForgetPassword_actionPerformed(ActionEvent e) {
+		getPasswordBack getpasswordback = new getPasswordBack();
+		getpasswordback.setVisible(true);
+		this.setVisible(false);
+	}
+	
+	private void jbuttonCancel_actionPerformed(ActionEvent e) {
+		this.setVisible(false);
+		MainWindow mainwindow = new MainWindow();
+		mainwindow.setVisible(true);
+	}
+	
+}

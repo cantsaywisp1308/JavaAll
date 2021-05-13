@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books xmlns:pub1="http://pub1.vn" xmlns:pub2="http://pub2.com" xmlns:pub3="http://pub3.net">
+    <pub1:book>
+        <pub1:id>b01</pub1:id>
+        <pub1:name>Name 1</pub1:name>
+    </pub1:book>
+
+    <pub2:book>
+        <pub1:id>b02</pub1:id>
+        <pub1:name>Name 2</pub1:name>
+    </pub2:book>
+
+
+</books>

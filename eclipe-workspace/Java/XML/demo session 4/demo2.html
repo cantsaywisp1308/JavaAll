@@ -1,0 +1,37 @@
+<div id="d1"></div>
+<script>
+    var s='<student>';
+    s += '<id>st01</id>';
+    s+= '<name>Name 1</name>';
+    s+= '<address>';
+        s+= '<street>Street 1</street>';
+        s+= '<ward>W1</ward>';
+    s+= '</address>';
+    s+= '<dob place="Place 1" format="yyyy-MM-dd">2020-10-20</dob>';
+    s+= '<email>a@gmail.com</email>';
+    s+= '<email>b@gmail.com</email>';
+    s+= '<email>c@gmail.com</email>';
+    s+= '</student>';
+    var dom = new DOMParser();
+    var doc = dom.parseFromString(s,'text/xml');
+    var id = doc.getElementsByTagName("id")[0].firstChild.textContent;
+    document.getElementById('d1').innerHTML += '<br>id:' + id;
+    var name = doc.getElementsByTagName("name")[0].firstChild.textContent;
+    document.getElementById('d1').innerHTML += '<br>name: ' + name;
+    var street = doc.getElementsByTagName("street")[0].firstChild.textContent;
+    document.getElementById('d1').innerHTML += '<br>street: ' + street;
+
+    var dob = doc.getElementsByTagName("dob")[0];
+    var place = dob.getAttributeNode('place').nodeValue;
+    document.getElementById('d1').innerHTML += '<br>place: ' + place;
+    var format = dob.getAttributeNode('format').nodeValue;
+    document.getElementById('d1').innerHTML += '<br>format: ' + format;
+    
+    var emails = doc.getElementsByTagName("email");
+    document.getElementById('d1').innerHTML += '<br>emails: ' + emails.length;
+    var s2 ='';
+    for(var i = 0; i < emails.length; i++){
+    s2 += '<br> ' + emails[i].firstChild.textContent;
+    }
+    document.getElementById('d1').innerHTML += s2;
+</script>

@@ -1,0 +1,40 @@
+package Windows;
+
+import javax.swing.JPanel;
+import javax.swing.BoxLayout;
+import java.awt.FlowLayout;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.Font;
+import java.awt.Color;
+import java.awt.BorderLayout;
+
+public class EditProfile extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public EditProfile() {
+		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.GREEN);
+		FlowLayout flowLayout = (FlowLayout) panel.getLayout();
+		flowLayout.setAlignment(FlowLayout.LEFT);
+		add(panel);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/Profile.png"));
+		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Edit Profile Section");
+		lblNewLabel_1.setFont(new Font("Lucida Grande", Font.BOLD | Font.ITALIC, 18));
+		panel.add(lblNewLabel_1);
+		
+		JPanel panel_1 = new JPanel();
+		add(panel_1);
+		panel_1.setLayout(new BorderLayout(0, 0));
+
+	}
+
+}

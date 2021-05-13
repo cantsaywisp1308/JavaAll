@@ -1,0 +1,57 @@
+<div id="d1"></div>
+<script>
+    var s = `
+        <students>
+            <student>
+                <id>st01</id>
+                <name>Name 1</name>
+            </student>
+            <student>
+                <id>st02</id>
+                <name>Name 2</name>
+            </student>
+            <student>
+                <id>st03</id>
+                <name>Name 3</name>
+            </student>
+        </students>
+    `;
+    var dom = new DOMParser();
+    var doc = dom.parseFromString(s, 'text/xml');
+    var students = doc.getElementsByTagName('student');
+
+    // Update
+    for(var i = 0; i < students.length; i++) {
+        var student = students[i];
+        var idTag = student.getElementsByTagName('id')[0];
+        if(idTag.textContent == 'st02') {
+            students[i].getElementsByTagName('name')[0].childNodes[0].nodeValue = 'abc';
+            break;
+        }
+    }
+
+    // Insert
+
+    // Delete
+    for(var i = 0; i < students.length; i++) {
+        var student = students[i];
+        var idTag = student.getElementsByTagName('id')[0];
+        if(idTag.textContent == 'st02') {
+            student.parentNode.removeChild(student);
+            break;
+        }
+    }
+
+    var s = '';
+    for(var i = 0; i < students.length; i++) {
+        var student = students[i];
+        var idTag = student.getElementsByTagName('id')[0];
+        s += idTag.nodeName + ': ' + idTag.textContent + '<br>';
+        var nameTag = student.getElementsByTagName('name')[0];
+        s += nameTag.nodeName + ': ' + nameTag.textContent + '<br>';
+        s += '-------------------<br>';        
+    }
+    document.querySelector('#d1').innerHTML = s;
+
+</script>
+

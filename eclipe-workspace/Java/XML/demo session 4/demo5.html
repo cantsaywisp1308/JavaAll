@@ -1,0 +1,87 @@
+<h3>Employee Information</h3>
+<div id="d1"></div>
+<script>
+var s =`
+<employee>
+    <id>e01</id>
+    <name>name 1</name>
+    <salary currency="usd">200</salary>
+    <exp unit="year">1.5</exp>
+    <dob>1980-10-20</dob>
+    <education>
+        <school>
+            <name>School 1</name>
+            <address>Address 1</address>
+            <startDate>1980-10-20</startDate>
+            <endDate>1980-10-20</endDate>
+        </school>
+        <school>
+            <name>School 1</name>
+            <address>Address 1</address>
+            <startDate>1980-10-20</startDate>
+            <endDate>1980-10-20</endDate>
+        </school>
+    </education>
+    <workHistory>
+        <company>
+            <name>Company 1</name>
+            <address>Address 1</address>
+            <phone>12323</phone>
+            <position>Position 1</position>
+            <startDate>1980-10-20</startDate>
+            <endDate>1980-10-20</endDate>
+        </company>
+        <company>
+            <name>Company 2</name>
+            <address>Address 2</address>
+            <phone>56546</phone>
+            <position>Position 2</position>
+            <startDate>1980-10-20</startDate>
+            <endDate>1980-10-20</endDate>
+        </company>
+    </workHistory>
+</employee>`
+
+var dom = new DOMParser();
+var doc = dom.parseFromString(s,'text/xml');
+var employee = doc.getElementsByTagName('employee');
+
+var id = doc.getElementsByTagName('id')[0].firstChild.textContent;
+document.getElementById('d1').innerHTML += '<br>ID: ' + id + '<br>';
+
+var name = doc.getElementsByTagName('name')[0].firstChild.textContent;
+document.getElementById('d1').innerHTML += '<br>Name: ' + name + '<br>';
+
+var salary = doc.getElementsByTagName('salary')[0].firstChild.textContent;
+var currency = salary[0].getAttributeNode('currency').nodeValue;
+document.getElementById('d1').innerHTML += '<br>Salary: ' + salary + ' ' + currency+ '<br>';
+
+var exp = doc.getElementsByTagName('exp')[0].firstChild.textContent;
+var unit = exp[0].getAttributeNode('unit').nodeValue;
+document.getElementById('d1').innerHTML += '<br>exp: ' + exp + ' ' + unit +'<br>';
+
+var dob = doc.getElementsByTagName('dob')[0].firstChild.textContent;
+document.getElementById('d1').innerHTML += '<br>dob: ' + dob;
+
+var education = doc.getElementsByTagName('education');
+var school = doc.getElementsByTagName('school');
+document.getElementById('d1').innerHTML += '<br>school: ' + school.length;
+
+</script>
+<h3>Education</h3>
+<table border="1">
+<tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+</tr>
+<script>
+for(i=0;i<school.length;i++){
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+}
+</script)
+</table>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT employee (id,name,address,phone+,email*,website?,dob)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (street,ward,district)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT ward (#PCDATA)>
+<!ELEMENT district (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT dob (#PCDATA)>
+<!ATTLIST dob place CDATA #REQUIRED>
+<!ATTLIST dob format CDATA #IMPLIED>

@@ -1,0 +1,14 @@
+package Windows;
+
+import javax.swing.JPanel;
+
+public class NewTransfer extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public NewTransfer() {
+
+	}
+
+}

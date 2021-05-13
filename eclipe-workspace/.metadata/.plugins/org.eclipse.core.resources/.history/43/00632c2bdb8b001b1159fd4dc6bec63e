@@ -1,0 +1,139 @@
+package Windows;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JMenuBar;
+import javax.swing.JLabel;
+import java.awt.FlowLayout;
+import java.awt.Color;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+
+public class MainWindow extends JFrame {
+
+	private JPanel contentPane;
+	private JButton jbtnEditProfile;
+	private JButton jbtnReport;
+	private JButton jbtnSearch;
+	private JButton jbtnMakeTransfer;
+	private JButton jbtnReleaseReport;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					MainWindow frame = new MainWindow();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public MainWindow() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 512, 402);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		contentPane = new JPanel();
+		contentPane.setBackground(Color.WHITE);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(new BorderLayout(0, 0));
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(35,255,110));
+		FlowLayout flowLayout = (FlowLayout) panel.getLayout();
+		flowLayout.setAlignment(FlowLayout.LEFT);
+		contentPane.add(panel, BorderLayout.SOUTH);
+		
+		JLabel lblNewLabel = new JLabel("Copyright 2021 by Bug to Bugs team");
+		panel.add(lblNewLabel);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(35,255,110));
+		contentPane.add(panel_1, BorderLayout.WEST);
+		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
+		
+		JLabel jlblWelcome = new JLabel("Welcome employeeName");
+		jlblWelcome.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		panel_1.add(jlblWelcome);
+		
+		jbtnEditProfile = new JButton("Edit Profile");
+		jbtnEditProfile.setBorderPainted(false);
+		jbtnEditProfile.setFocusPainted(false);
+		jbtnEditProfile.setRequestFocusEnabled(false);
+		jbtnEditProfile.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/Profile.png"));
+		jbtnEditProfile.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		panel_1.add(jbtnEditProfile);
+		
+		JButton jbtnRequestTransfer = new JButton("Request Transfer");
+		jbtnRequestTransfer.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/request.png"));
+		jbtnRequestTransfer.setDisabledSelectedIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/request.png"));
+		jbtnRequestTransfer.setRequestFocusEnabled(false);
+		jbtnRequestTransfer.setBorderPainted(false);
+		jbtnRequestTransfer.setFocusPainted(false);
+		jbtnRequestTransfer.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		panel_1.add(jbtnRequestTransfer);
+		
+		jbtnMakeTransfer = new JButton("Make Transfer");
+		jbtnMakeTransfer.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/request.png"));
+		jbtnMakeTransfer.setRequestFocusEnabled(false);
+		jbtnMakeTransfer.setFocusPainted(false);
+		jbtnMakeTransfer.setBorderPainted(false);
+		jbtnMakeTransfer.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		panel_1.add(jbtnMakeTransfer);
+		
+		jbtnSearch = new JButton("Search");
+		jbtnSearch.setRequestFocusEnabled(false);
+		jbtnSearch.setFocusPainted(false);
+		jbtnSearch.setBorderPainted(false);
+		jbtnSearch.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/Search.png"));
+		jbtnSearch.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		panel_1.add(jbtnSearch);
+		
+		jbtnReleaseReport = new JButton("Release Report");
+		jbtnReleaseReport.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/pie-chart.png"));
+		jbtnReleaseReport.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		jbtnReleaseReport.setRequestFocusEnabled(false);
+		jbtnReleaseReport.setBorderPainted(false);
+		jbtnReleaseReport.setFocusPainted(false);
+		panel_1.add(jbtnReleaseReport);
+		
+		jbtnReport = new JButton("Warning");
+		jbtnReport.setBorderPainted(false);
+		jbtnReport.setRequestFocusEnabled(false);
+		jbtnReport.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/Warning.png"));
+		jbtnReport.setFocusPainted(false);
+		jbtnReport.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		panel_1.add(jbtnReport);
+		
+		JButton jbtnLogout = new JButton("Log Out");
+		jbtnLogout.setIcon(new ImageIcon("/Users/macbookair/eclipse-workspace/TransferManagement/src/Image/PNG-24/logout.png"));
+		jbtnLogout.setRequestFocusEnabled(false);
+		jbtnLogout.setFocusPainted(false);
+		jbtnLogout.setBorderPainted(false);
+		jbtnLogout.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		panel_1.add(jbtnLogout);
+		
+		JPanel panel_2 = new JPanel();
+		contentPane.add(panel_2, BorderLayout.CENTER);
+		panel_2.setLayout(new BoxLayout(panel_2, BoxLayout.X_AXIS));
+	}
+
+}

@@ -1,0 +1,15 @@
+08:00:27 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+08:00:27 Build Failed. 2 errors, 0 warnings. (took 875ms)
+

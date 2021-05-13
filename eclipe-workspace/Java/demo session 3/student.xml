@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="student.xsl" type="text/xsl"?>
+<student>
+    <id>st01</id>
+    <name>Name 1</name>
+    <email>a@gmail.com</email>
+    <email>b@gmail.com</email>
+    <email>c@gmail.com</email>
+    <dob place="Place 1" format="yyyy-mm-dd">2020-10-20</dob>
+    <address>
+        <street>Street 1</street>
+        <ward>Ward 1</ward>
+        <district>District 1</district>
+    </address>
+    <photo>thumb1.jpg</photo>
+</student>

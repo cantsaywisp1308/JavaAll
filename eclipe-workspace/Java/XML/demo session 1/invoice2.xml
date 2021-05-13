@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE invoices SYSTEM "invoice.dtd" >
+
+<invoices>
+    <invoice>
+        <id min="3" max="10">hd01</id>
+        <invoice_name>Invoice 1</invoice_name>
+        <created format="yyyy-MM-dd">2015-10-20</created>
+        <!-- Gia tri la 1 trong 4 trang thai: new, process, done, cancelled -->
+        <status>done</status>
+        <!-- Gia tri la 1 trong 3 trang thai: cash, paypal, credit card -->
+        <payment>cash</payment>
+        <customer>
+            <customer_id>c01</customer_id>
+            <customer_name>Name 1</customer_name>
+            <address>
+                <street>Street 1</street>
+                <ward>w1</ward>
+                <district>d1</district>
+                <phone>123</phone>
+            </address>
+        </customer>
+        <invoice_details>
+           <product>
+                <product_id>p01</product_id>
+                <product_name>Product 1</product_name>
+                <quantity>1</quantity>
+                <price currency="usd">200</price>
+            </product>
+           
+            <product>
+                <product_id>p02</product_id>
+                <product_name>Product 2</product_name>
+                <quantity>3</quantity>
+                <price currency="usd">10</price>
+            </product>
+           
+        </invoice_details>
+    
+    </invoice>
+           
+    <invoice>
+        <id min="3" max="10">hd01</id>
+        <invoice_name>Invoice 1</invoice_name>
+        <created format="yyyy-MM-dd">2015-10-20</created>
+                   <!-- Gia tri la 1 trong 4 trang thai: new, process, done, cancelled -->
+        <status>done</status>
+                   <!-- Gia tri la 1 trong 3 trang thai: cash, paypal, credit card -->
+        <payment>cash</payment>
+            
+        <customer>
+            <customer_id>c01</customer_id>
+            <customer_name>Name 1</customer_name>
+            <address>
+                <street>Street 1</street>
+                <ward>w1</ward>
+                <district>d1</district>
+                <phone>123</phone>
+            </address>
+        </customer>
+           
+        <invoice_details>
+            <product>
+                <product_id>p01</product_id>
+                <product_name>Product 1</product_name>
+                <quantity>1</quantity>
+                <price currency="usd">200</price>
+            </product>
+    
+            <product>
+                <product_id>p02</product_id>
+                <product_name>Product 2</product_name>
+                <quantity>3</quantity>
+                <price currency="usd">10</price>
+            </product>
+    
+        </invoice_details>
+    </invoice>
+    
+    <invoice>
+        <id min="3" max="10">hd01</id>
+        <invoice_name>Invoice 1</invoice_name>
+        <created format="yyyy-MM-dd">2015-10-20</created>
+                   <!-- Gia tri la 1 trong 4 trang thai: new, process, done, cancelled -->
+        <status>done</status>
+                   <!-- Gia tri la 1 trong 3 trang thai: cash, paypal, credit card -->
+        <payment>cash</payment>
+        <customer>
+            <customer_id>c01</customer_id>
+            <customer_name>Name 1</customer_name>
+            <address>
+                <street>Street 1</street>
+                <ward>w1</ward>
+                <district>d1</district>
+                <phone>123</phone>
+            </address>
+        </customer>
+    
+        <invoice_details>
+            <product>
+                <product_id>p01</product_id>
+                <product_name>Product 1</product_name>
+                <quantity>1</quantity>
+                <price currency="usd">200</price>
+            </product>
+    
+            <product>
+                <product_id>p02</product_id>
+                <product_name>Product 2</product_name>
+                <quantity>3</quantity>
+                <price currency="usd">10</price>
+            </product>
+    
+        </invoice_details>
+        </invoice>
+</invoices>

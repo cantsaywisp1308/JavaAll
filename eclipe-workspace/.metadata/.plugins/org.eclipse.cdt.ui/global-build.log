@@ -1,0 +1,433 @@
+10:54:36 **** Build of configuration Debug for project test ****
+make h 
+make: *** No rule to make target `h'.  Stop.
+"make h" terminated with exit code 2. Build might be incomplete.
+00:06:04 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:11:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main()
+^
+../main.c:11:1: note: change return type to 'int'
+void main()
+^~~~
+int
+../main.c:13:2: error: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Werror,-Wimplicit-function-declaration]
+        printf("hello");
+        ^
+../main.c:13:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:07:52 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:11:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main()
+^
+../main.c:11:1: note: change return type to 'int'
+void main()
+^~~~
+int
+../main.c:13:2: error: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Werror,-Wimplicit-function-declaration]
+        printf("hello");
+        ^
+../main.c:13:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:39:36 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:11:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main()
+^
+../main.c:11:1: note: change return type to 'int'
+void main()
+^~~~
+int
+../main.c:13:2: error: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Werror,-Wimplicit-function-declaration]
+        printf("hello");
+        ^
+../main.c:13:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:40:27 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:11:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main()
+^
+../main.c:11:1: note: change return type to 'int'
+void main()
+^~~~
+int
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: test
+Invoking: MacOS X C Linker
+gcc  -o "test"  ./main.o   
+Finished building target: test
+ 
+08:45:08 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+08:45:46 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+08:58:06 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+08:58:50 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+08:59:59 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+08:59:59 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:00:13 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:00:28 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:26:20 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:26:26 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:27:23 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:11:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main()
+^
+../main.c:11:1: note: change return type to 'int'
+void main()
+^~~~
+int
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: test
+Invoking: MacOS X C Linker
+gcc  -o "test"  ./main.o   
+Finished building target: test
+ 
+09:27:59 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:42:13 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:44:04 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:44:51 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:59:55 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:00:45 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:00:57 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:01:22 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:57:01 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:05:59 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:08:43 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:09:39 **** Build of configuration Debug for project FirstProject ****
+make all 
+Building file: ../Source Files/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Source Files/main.d" -MT"Source\ Files/main.d" -o "Source Files/main.o" "../Source Files/main.c"
+../Source Files/main.c:3:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main() {
+^
+../Source Files/main.c:3:1: note: change return type to 'int'
+void main() {
+^~~~
+int
+1 warning generated.
+Finished building: ../Source Files/main.c
+ 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o   
+Finished building target: FirstProject
+ 
+11:09:40 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:09:52 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:09:59 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+make: Nothing to be done for `all'.
+11:11:14 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+make: Nothing to be done for `all'.
+11:40:37 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building file: ../Source Files/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Source Files/main.d" -MT"Source\ Files/main.d" -o "Source Files/main.o" "../Source Files/main.c"
+../Source Files/main.c:3:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main() {
+^
+../Source Files/main.c:3:1: note: change return type to 'int'
+void main() {
+^~~~
+int
+1 warning generated.
+Finished building: ../Source Files/main.c
+ 
+Building file: ../Source Files/variables.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Source Files/variables.d" -MT"Source\ Files/variables.d" -o "Source Files/variables.o" "../Source Files/variables.c"
+../Source Files/variables.c:5:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main() {
+^
+../Source Files/variables.c:5:1: note: change return type to 'int'
+void main() {
+^~~~
+int
+1 warning generated.
+Finished building: ../Source Files/variables.c
+ 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:40:57 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:41:12 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:41:38 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:41:39 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:41:55 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:42:10 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:42:10 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:42:26 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:42:27 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:42:51 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:42:52 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:46:31 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:46:31 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:50:49 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:50:49 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:52:15 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building file: ../Source Files/variables.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Source Files/variables.d" -MT"Source\ Files/variables.d" -o "Source Files/variables.o" "../Source Files/variables.c"
+../Source Files/variables.c:5:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main() {
+^
+../Source Files/variables.c:5:1: note: change return type to 'int'
+void main() {
+^~~~
+int
+1 warning generated.
+Finished building: ../Source Files/variables.c
+ 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:52:16 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+11:58:54 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building file: ../Source Files/variables.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Source Files/variables.d" -MT"Source\ Files/variables.d" -o "Source Files/variables.o" "../Source Files/variables.c"
+../Source Files/variables.c:6:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main() {
+^
+../Source Files/variables.c:6:1: note: change return type to 'int'
+void main() {
+^~~~
+int
+../Source Files/variables.c:12:9: warning: incompatible integer to pointer conversion passing 'char' to parameter of type 'const char *'; take the address with & [-Wint-conversion]
+        printf(x);
+               ^
+               &
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/stdio.h:170:36: note: passing argument to parameter here
+int      printf(const char * __restrict, ...) __printflike(1, 2);
+                                       ^
+../Source Files/variables.c:12:9: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        printf(x);
+               ^
+../Source Files/variables.c:12:9: note: treat the string as an argument to avoid this
+        printf(x);
+               ^
+               "%s", 
+3 warnings generated.
+Finished building: ../Source Files/variables.c
+ 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:00:27 **** Incremental Build of configuration Debug for project FirstProject ****
+make all 
+Building target: FirstProject
+Invoking: MacOS X C Linker
+gcc  -o "FirstProject"  ./Source\ Files/main.o ./Source\ Files/variables.o   
+duplicate symbol '_main' in:
+    ./Source Files/main.o
+    ./Source Files/variables.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [FirstProject] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:00:28 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.

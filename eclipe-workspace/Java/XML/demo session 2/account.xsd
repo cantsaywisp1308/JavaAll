@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="danhsachtaikhoan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="taikhoan">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="type_taikhoan">
+        <xs:sequence>
+            <xs:element name="username" type="type_username_ct"></xs:element>
+            <xs:element name="password" type="type_password"></xs:element>
+            <xs:element name="danhsachhoadon" type="type_danhsachhoadon"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="ngaysinh" type="xs:date"></xs:attribute>
+        <xs:attribute name="gioitinh" type="type_gioitinh"></xs:attribute>
+    </xs:complexType>
+
+<xs:simpleType name="type_username_ct">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="6"></xs:minLength>
+        <xs:maxLength value="10"></xs:maxLength>
+    </xs:restriction>
+</xs:simpleType>    
+
+<xs:simpleType name="type_gioitinh">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="nam"></xs:enumeration> 
+        <xs:enumeration value="nu"></xs:enumeration> 
+    </xs:restriction>
+ </xs:simpleType>
+
+<xs:simpleType name="type_password">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="6"></xs:minLength>
+        <xs:maxLength value="10"></xs:maxLength>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="type_danhsachhoadon">
+    <xs:sequence>
+        <xs:element name="tenhd" type="xs:string"></xs:element>
+        <xs:element name="ngaylap" type="type_ngaylap"></xs:element>
+        <xs:element name="tinhtrang" type="type_tinhtrang"></xs:element>
+        <xs:element name="httt" type="type_httt"></xs:element>
+        <xs:element name="tongtien" type="type_tongtien"></xs:element>
+        <xs:element name="chitiethoadon" type="type_chitiethoadon"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="type_ngaylap">
+    <xs:attribute name="dinhdang" type="xs:date"></xs:attribute>
+</xs:complexType>
+
+<xs:simpleType name="type_tinhtrang">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="da thanh toan"></xs:enumeration>
+        <xs:enumeration value="chua thanh toan"></xs:enumeration>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="type_httt">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="tien mat"></xs:enumeration>
+        <xs:enumeration value="chuyen khoan"></xs:enumeration>
+        <xs:enumeration value="paypal"></xs:enumeration>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="type_tongtien">
+    <xs:attribute name="dvt" type="xs:string"></xs:attribute>
+</xs:complexType>
+
+<xs:complexType name="type_chitiethoadon">
+    <xs:sequence>
+        <xs:element name="sanpham" type="type_sanpham" minOccurs="1" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="type_sanpham">
+    <xs:sequence>
+        <xs:element name="masp" type="xs:string"></xs:element>
+        <xs:element name="tensp" type="xs:string"></xs:element>
+        <xs:element name="gia" type="type_gia" ></xs:element>
+        <xs:element name="soluong" type="type_soluong"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="type_gia">
+    <xs:restriction base="xs:double">
+        <xs:minExclusive value="0"></xs:minExclusive>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="type_soluong">
+    <xs:restriction base="xs:int">
+        <xs:minExclusive value="0"></xs:minExclusive>
+    </xs:restriction>
+</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="student.xsd">
+    <id>st01</id>
+    <name>Alchemist</name>
+    <age>20</age>
+    <score>6.7</score>
+    <status>true</status>
+    <DOB>1993-08-13</DOB>
+    <email>al@gmail</email>
+    <email>alchemist@gmail</email>
+    <email>alche@gmail</email>
+    <address>
+        <street>Truong Vinh Ky</street>
+        <ward>Tan Thanh</ward>
+        <district>Tan Phu</district>
+    </address>
+    <DOB2 place="Tan Phu" format="YYYY-MM-DD">1993-09-12</DOB2>
+    <age2>60</age2>
+    <gender>male</gender>
+    <description>Money Maker</description>
+</student>

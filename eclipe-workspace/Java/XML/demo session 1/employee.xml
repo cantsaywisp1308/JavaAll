@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE employee [
+    <!ELEMENT employee (id,name,address,phone+,email*,website?,dob)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT address (street,ward,district)>
+    <!ELEMENT street (#PCDATA)>
+    <!ELEMENT ward (#PCDATA)>
+    <!ELEMENT district (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT website (#PCDATA)>
+    <!ELEMENT dob (#PCDATA)>
+    <!ATTLIST dob place CDATA #REQUIRED>
+    <!ATTLIST dob format CDATA #IMPLIED>
+]>
+<!-- *:0-> n
+    +: 1->n
+    ?: 0 hoặc 1
+
+-->
+<employee>
+    <id>e01</id>
+    <name>Name 1</name>
+    <address>
+        <street>Street 1</street>
+        <ward>Ward 1</ward>
+        <district>District 1</district>
+    </address>
+    <phone>123456</phone>
+    <phone>234567</phone>
+    <phone>087543</phone>
+    <email>name1@gmail.com</email>
+    <email>name1@hotmail.com</email>
+    <website>http://name1.com</website>
+    <dob place="Place 1" format="yyyy-mm-dd">1993-08-13</dob>
+
+</employee>

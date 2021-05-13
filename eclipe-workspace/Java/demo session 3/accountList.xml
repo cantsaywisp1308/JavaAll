@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<danhsachtaikhoan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="account.xsd">
+
+
+    <taikhoan ngaysinh="1980-10-20" gioitinh="nam"> <!-- Ngay sinh kieu date, gioi tinh chon 1 trong 2 gia tri nam hoac nu -->
+        <username>khang1024</username> <!-- Co it nhat 6 ki tu, toi da 10 ki tu, co 2 thuoc tinh min, max -->
+        <password>123456789</password> <!-- Co it nhat 6 ki tu, toi da 10 ki tu -->
+        <danhsachhoadon>
+            <hoadon mahd="hd01"> <!-- Ma hoa don co it nhat 4 ki tu va toi da 6 ki tu -->
+                <tenhd>Hoa don 1</tenhd>
+                <ngaylap dinhdang="yyyy-MM-dd"></ngaylap> <!-- Kieu thoi gian co 1 thuoc tinh dindang -->
+                <tinhtrang>da thanh toan</tinhtrang> <!-- Chon 1 trong 2 gia tri: da thanh toan hoa chua thanh toan -->
+                <httt>tien mat</httt> <!-- Chon 1 trong 3 gia tri: tien mat, chuyen khoan hoac paypal -->
+                <tongtien dvt="usd">1200</tongtien> <!-- Kieu so va khong duoc nho hon 0 -->
+                <chitiethoadon>
+                    <sanpham> <!-- co nhieu san pham -->
+                        <masp>lt01</masp>
+                        <tensp>Laptop Macbook</tensp>
+                        <gia>1200</gia> <!-- Kieu so va khong duoc nho hon 0 -->
+                        <soluong>1</soluong> <!-- Kieu so va khong duoc nho hon 0 -->
+                    </sanpham> 
+                </chitiethoadon>
+            </hoadon>
+        </danhsachhoadon>
+    </taikhoan>
+</danhsachtaikhoan>
